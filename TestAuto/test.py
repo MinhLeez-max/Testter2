@@ -34,7 +34,7 @@ try:
             # Lưu dữ liệu vào danh sách
             data.append({"name": name, "price": price, "image": image})
         except Exception as e:
-            print(f"❌ Lỗi khi lấy dữ liệu sản phẩm: {e}")
+            print(f" Lỗi khi lấy dữ liệu sản phẩm: {e}")
 
     # Lưu dữ liệu vào file CSV
     with open("products.csv", "w", encoding="utf-8", newline="") as file:
@@ -42,7 +42,7 @@ try:
         writer.writeheader()
         writer.writerows(data)
 
-    print("✅ Dữ liệu đã được lưu vào file 'products.csv'!")
+    print("Dữ liệu đã được lưu vào file 'products.csv'!")
 
 finally:
     # Đóng trình duyệt
