@@ -37,7 +37,7 @@ try:
         for idx, (title, publish_time) in enumerate(article_data, start=1):
             file.write(f"{idx}. {title} - {publish_time}\n")
 
-    print("✅ Đã thu thập và lưu tiêu đề bài viết cùng ngày giờ vào tệp articles_with_time.txt.")
+    print("Đã thu thập và lưu tiêu đề bài viết cùng ngày giờ vào tệp articles_with_time.txt.")
 
 finally:
     # Đóng trình duyệt
